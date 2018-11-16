@@ -78,8 +78,8 @@ paascloud:
       tokenStore: jwt
   aliyun:
     key:
-      accessKeyId: your aliyun accessKeyId
-      accessKeySecret: your aliyun accessKeySecret
+      accessKeyId: LTAISifqrepc64YL
+      accessKeySecret: xsg4Gunr8eNd5QH3U897Txv03zwkpz
     rocketMq:
       enable: true
       reliableMessageConsumer: true
