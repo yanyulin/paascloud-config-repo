@@ -81,10 +81,10 @@ paascloud:
     code:
       image:
         expireIn: 180
-        url: /auth/register,/auth/submitResetPwdEmail,/auth/code/sms
+        url: /auth/submitResetPwdEmail,/auth/code/sms
       sms:
         expireIn: 600
-        url: /uac/auth/submitResetPwdPhone
+        url: /auth/register,/uac/auth/submitResetPwdPhone
         mobileMaxSendCount: 10000
         ipMaxSendCount: 20000
         totalMaxSendCount: 3000
