@@ -64,8 +64,8 @@ paascloud:
       accessKey: VpT_l_xAEFUxjQKva74FgUJRrj3QpoN8f3jfOnDK
       secretKey: Az-YhxiR3s46qfRgLIUlreHbhjVqUhzU3YQuyDVu
     oss:
-      privateHost: http://www.yanyulin.top1
-      publicHost: http://www.yanyulin.top
+      privateHost: http://yy.yanyulin.top
+      publicHost: http://yy.yanyulin.top
       fileMaxSize: 104857600
   oauth2:
     jwtSigningKey: paascloud
