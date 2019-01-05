@@ -19,7 +19,7 @@ zuul:
       path: /uac/**
       sensitiveHeaders:
 #      strip-prefix: false
-      service-id: paascloud-provider-uac
+      service-id: jdc-provider-uac
       ribbon:
         eager-load:
           enabled: true
@@ -31,7 +31,7 @@ zuul:
     mdc-route:
       path: /mdc/**
       sensitiveHeaders:
-      service-id: paascloud-provider-mdc
+      service-id: jdc-provider-mdc
       ribbon:
         eager-load:
           enabled: true
@@ -43,7 +43,7 @@ zuul:
     omc-route:
       path: /omc/**
       sensitiveHeaders:
-      service-id: paascloud-provider-omc
+      service-id: jdc-provider-omc
       ribbon:
         eager-load:
           enabled: true
@@ -55,7 +55,7 @@ zuul:
     opc-route:
       path: /opc/**
       sensitiveHeaders:
-      service-id: paascloud-provider-opc
+      service-id: jdc-provider-opc
       ribbon:
         eager-load:
           enabled: true
@@ -79,7 +79,7 @@ zuul:
     tpc-route:
       path: /tpc/**
       sensitiveHeaders:
-      service-id: paascloud-provider-tpc
+      service-id: jdc-provider-tpc
       ribbon:
         eager-load:
           enabled: true
@@ -96,13 +96,13 @@ security:
     client:
       clientId: paascloud-client-gateway
       clientSecret: paascloudClientSecret
-      access-token-uri: http://paascloud-gateway:7979/uac/oauth/token
-      user-authorization-uri: http://paascloud-gateway:7979/uac/oauth/authorize
+      access-token-uri: http://jdc-gateway:7979/uac/oauth/token
+      user-authorization-uri: http://jdc-gateway:7979/uac/oauth/authorize
     resource:
-      user-info-uri: http://paascloud-gateway:7979/uac/user
+      user-info-uri: http://jdc-gateway:7979/uac/user
       prefer-token-info: false
       jwt:
-        key-uri: http://paascloud-provider-uac:8000/oauth/token_key
+        key-uri: http://jdc-provider-uac:8000/oauth/token_key
 
 proxy:
   auth:
