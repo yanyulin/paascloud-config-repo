@@ -36,10 +36,10 @@ security:
     client:
       clientId: paascloud-client-uac
       clientSecret: paascloudClientSecret
-      access-token-uri: http://paascloud-gateway:7979/uac/oauth/token
-      user-authorization-uri: http://paascloud-gateway:7979/uac/oauth/authorize
+      access-token-uri: http://jdc-gateway:7979/uac/oauth/token
+      user-authorization-uri: http://jdc-gateway:7979/uac/oauth/authorize
     resource:
-      id: paascloud-resource-uac
+      id: jdc-resource-uac
       filter-order: 3
 
 paascloud:
@@ -49,7 +49,7 @@ paascloud:
       enable: true
       reliableMessageConsumer: false
       reliableMessageProducer: true
-      instanceName: paascloud-provider-uac
+      instanceName: jdc-provider-uac
       consumerGroup: CID_UAC
       producerGroup: PID_UAC
   auth:
