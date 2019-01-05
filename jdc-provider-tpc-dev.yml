@@ -32,10 +32,10 @@ security:
     client:
       clientId: paascloud-client-mdc
       clientSecret: paascloudClientSecret
-      access-token-uri: http://paascloud-gateway:7979/uac/oauth/token
-      user-authorization-uri: http://paascloud-gateway:7979/uac/oauth/authorize
+      access-token-uri: http://jdc-gateway:7979/uac/oauth/token
+      user-authorization-uri: http://jdc-gateway:7979/uac/oauth/authorize
     resource:
-      user-info-uri: http://paascloud-gateway:7979/uac/user
+      user-info-uri: http://jdc-gateway:7979/uac/user
       prefer-token-info: false
       jwt:
         key-uri: http://jdc-provider-uac:8000/oauth/token_key
@@ -58,7 +58,7 @@ paascloud:
       reliableMessageConsumer: false
       reliableMessageProducer: true
       namesrvAddr: paascloud-mq-rocket:9876
-      instanceName: paascloud-provider-tpc
+      instanceName: jdc-provider-tpc
       producerGroup: PID_TPC
   oauth2:
     jwtSigningKey: paascloud
