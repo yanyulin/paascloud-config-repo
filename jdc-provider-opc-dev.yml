@@ -78,8 +78,8 @@ paascloud:
       tokenStore: jwt
   aliyun:
     key:
-      accessKeyId: LTAISifqrepc64YL
-      accessKeySecret: xsg4Gunr8eNd5QH3U897Txv03zwkpz
+      accessKeyId: LTAIRqzSD7b8n89T
+      accessKeySecret: PrxrMKyJ87hCnJ8RWDyrMLvnWuk0Zy
     rocketMq:
       enable: true
       reliableMessageConsumer: true
@@ -89,7 +89,7 @@ paascloud:
       consumerGroup: CID_OPC
       producerGroup: PID_OPC
     sms:
-      signName: 严予林
+      signName: 简采科技
       regionId: cn-beijing
       endpoint:
       endpointName: cn-beijing
